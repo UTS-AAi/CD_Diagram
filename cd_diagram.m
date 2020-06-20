@@ -1,14 +1,18 @@
 function cd = cd_diagram(avranks, N, labels, alpha, no_decimal, met)
 %
-% CRITICALDIFFERNCE - plot a critical difference diagram
+% cd_diagram - plot a critical difference diagram
 %
-%    CRITICALDIFFERENCE(S,LABELS) produces a critical difference diagram [1]
+%    cd_diagram(avranks, N, labels, alpha, no_decimal, met) produces a critical difference diagram [1]
 %    displaying the statistical significance (or otherwise) of a matrix of
 %    scores, S, achieved by a set of machine learning algorithms.  Here
 %    LABELS is a cell array of strings giving the name of each algorithm.
-%    
+%  
+%    avranks: average ranks for classifiers
+%    labels: a list of cell containing names of classifiers
+%    alpha: significant level
 %    N: Number of datasets
 %    no_decimal: Number of digits in the decimal part to round the cd value
+%    met: Post-host test method: Nemenyi or Bonferroni-Dunn 
 %    
 %    References
 %    
