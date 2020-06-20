@@ -22,7 +22,7 @@ function cd = cd_diagram(avranks, N, labels, alpha, no_decimal, met)
 %
 
 %
-% File        : criticaldifference.m
+% File        : cd_diagram.m
 %
 %
 % Author      : Thanh Tung Khuat
